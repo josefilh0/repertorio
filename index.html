@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Repertório</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Meu Repertório</h1>
+    </header>
+    <main>
+      <form id="form-musica">
+        <fieldset>
+          <legend>Adicionar música</legend>
+          <div class="form-group">
+            <label for="nome-musica">Nome da música</label>
+            <input type="text" id="nome-musica" required />
+          </div>
+          <div class="form-group">
+            <label for="tonalidade-musica">Tonalidade</label>
+            <select id="tonalidade-musica" required>
+              <option value="">Selecione a tonalidade</option>
+              <option value="C">C</option>
+              <option value="C#">C#</option>
+              <option value="D">D</option>
+              <option value="D#">D#</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+              <option value="F#">F#</option>
+              <option value="G">G</option>
+              <option value="G#">G#</option>
+              <option value="A">A</option>
+              <option value="A#">A#</option>
+              <option value="B">B</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="artista-musica">Artista</label>
+            <input type="text" id="artista-musica" required />
+          </div>
+          <div class="form-group">
+            <label for="link-musica">Link da música</label>
+            <input type="url" id="link-musica" required />
+          </div>
+          <div class="form-group">
+            <label for="link-cifra">Link da cifra</label>
+            <input type="url" id="link-cifra" required />
+          </div>
+          <div class="form-group">
+            <button type="submit">Adicionar</button>
+          </div>
+        </fieldset>
+      </form>
+      <table id="tabela-repertorio">
+        <thead>
+          <tr>
+            <th>Música</th>
+            <th>Tonalidade</th>
+            <th>Artista</th>
+            <th>Links</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button id="compartilhar">Compartilhar</button>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
